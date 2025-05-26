@@ -29,7 +29,7 @@ def run():
         )
         if st.button('시작', key='mom_start'):
             items = mom_data[category]
-            sample_count = min(20, len(items))
+            sample_count = min(10, len(items))
             st.session_state.mom_playlist = random.sample(items, sample_count)
             st.session_state.mom_index    = 0
             st.session_state.mom_stage    = 'quiz'
